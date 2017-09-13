@@ -135,7 +135,7 @@ class BigBlueButton {
 		'&maxParticipants='.urlencode($creationParams['maxParticipants']).
 		'&record='.urlencode($creationParams['record']).
 		'&duration='.urlencode($creationParams['duration']).
-		//'&meta_category='.urlencode($creationParams['meta_category']);				
+		'&meta_category='.urlencode($creationParams['meta_category']);				
 		$welcomeMessage = $creationParams['welcomeMsg'];
 		if(trim($welcomeMessage)) 
 			$params .= '&welcome='.urlencode($welcomeMessage);
